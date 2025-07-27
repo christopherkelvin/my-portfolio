@@ -8,7 +8,7 @@ export const Profile = () => {
   console.log(socialIcons);
   return (
     <Element name="Home" className="flex items-center justify-center ">
-      <div className="flex flex-row  bg-blue-400/30 w-[50%] p-8 rounded-lg shadow-lg overflow-hidden mt-44" data-aos= "fade-up">
+      <div className="flex flex-row  bg-blue-400/30 w-[70%] p-8 rounded-lg shadow-lg overflow-hidden mt-44" data-aos= "fade-up">
         <img
           src={Image}
           alt="Christopher Kelvin Mndeme photo"
