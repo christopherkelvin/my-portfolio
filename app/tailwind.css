@@ -4,8 +4,12 @@
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  @apply bg-[var(--bg-color)] text-white;
 
+  --main-color:#FF9F1C;
+  --bg-color:#2EC4B6;
+  --third-color: #CBF3F0;
+  --text-color:#1A237E;
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
