@@ -9,8 +9,8 @@ export default function Index() {
       <Navigation />
       <Profile />
       <Skills />
-      <Projects />
       <Experience />
+      <Projects />
     </div>
   );
 }

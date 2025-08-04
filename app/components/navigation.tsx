@@ -3,13 +3,13 @@ import { navigationItems } from "~/constants/navigationItems";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import { useState } from "react";
-import { Button } from "./Button";
+import { Button } from "./button";
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="fixed flex justify-between w-full bg-[var(--third-color)] z-20 md:border-b">
       <div className="font-sans text-2xl p-5 flex italic font-bold">
-        <div className=" text-[var(--text-color)]">Software Engineer</div>
+        <div className=" text-[var(--text-color)]">Software Developer</div>
       </div>
       <div className="flex max-md:flex-col max-md:space-y-3 max-md:right-5">
         <div
@@ -29,12 +29,12 @@ export const Navigation = () => {
             <Link
               activeStyle={{ color: "var(--main-color)" }}
               spy={true}
-              // activeClass="text-blue-600"
               id={item.title}
               key={item.title}
               smooth={true}
               duration={300}
               to={item.path}
+              offset={-80}
               className="text-[var(--text-color)] hover:text-blue-600 transition-colors cursor-pointer font-serif font-bold"
             >
               {item.title}
